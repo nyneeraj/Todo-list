@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- add css file -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <title>Todo List App</title>
+  
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="task-input">
+        <input type="text" placeholder="Type your todo list" />
+        <img
+          src="images\icons8-document-24.png"
+        />
+        
+        <button class="add-btn">Add Task</button>
+      </div>
+      <!-- div complited all task || complited remove-->
+      <div class="controls">
+        <span class="clear-btn"
+          ><img
+            src="images\icons8-double-tick-30.png"/>
+          Complete all tasks</span
+        >
+
+        <span class="clear-btn">Clear completed</span>
+      </div>
+      <!-- unorder list which uses in javaSript -->
+      <ul class="task-box"></ul>
+
+      <!-- botton Div  -->
+      <div class="bottom-controls">
+        <span class="task-left"> tasks left</span>
+        <!-- complited or Uncomplete -->
+        <div class="filters">
+          <span class="active" id="all">All</span>
+          <span id="pending">Uncomplete</span>
+          <span id="completed">Completed</span>
+        </div>
+      </div>
+    </div>
+    <!--add javaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
